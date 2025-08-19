@@ -1,1 +1,132 @@
-/* comment */
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px
+}
+
+/*full width header span*/
+header {
+    width: 100%;
+    color: white;
+    padding: 20px 40px;
+}
+
+.hero-banner {
+    background-image: url("images/alabama_state_capitol.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-banner h1 {
+    font-weight: 700;
+    font-size: 3em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/*navigation bar*/
+.main-nav {
+    background-color: rgba(0, 51, 102, 0.6);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+/*hover effect*/
+.main-nav a:hover {
+    background-color: #004c99
+}
+
+/*make main content float left*/
+.main-content {
+    width: 65%;
+    float: left;
+    padding: 20px;
+}
+
+/*aside*/
+aside {
+    float: right;
+    width: 35%;
+    margin: 20px;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px
+}
+
+aside table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px
+}
+
+aside th,
+aside td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+aside th {
+    background-color: #123a63;
+    color: white;
+}
+
+/*keep aside floating to the right*/
+.fun-facts {
+    width: 30%;
+    float: right;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*clear floats*/
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*header style*/
+.section-title {
+    font-size: 1.8em;
+    color: #003366;
+    text-transform: uppercase;
+    margin-bottom: 10px
+}
+/*id selector*/
+#page-audio {
+    display: block;
+    margin: 20px 0;
+    width: 300px;
+}       
