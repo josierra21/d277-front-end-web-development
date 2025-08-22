@@ -129,4 +129,60 @@ aside th {
     display: block;
     margin: 20px 0;
     width: 300px;
-}       
+}   
+
+/*MONTGOMERY.HTML*/
+/*navigation bar*/
+.city-page .top-nav {
+    background-color:  #004c99;
+    padding: 0;
+}
+
+.city-page .top-nav li {
+    height: 100%;
+}
+
+.city-page .top-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+}
+
+.city-page .top-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 25px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.city-page .top-nav a:hover {
+    background-color: #66ccff;
+}
+
+/*wrap main and aside in shared container*/
+.city-page .content-container {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.city-page main {
+    width: 60%
+}
+
+.city-page .section-title {
+    font-size: 1.8em;
+    color: #003366;
+    text-transform: uppercase;
+    margin-bottom: 10px
+}
