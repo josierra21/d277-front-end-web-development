@@ -1,1 +1,74 @@
-Test 1 
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="city-page">
+    <div>
+        <div style="background: linear-gradient(to bottom, #004c99, #66ccff);
+                padding: 20px; text-align: center;">
+            <img src="images/alabama_seal.png" alt="alabama seal" style="width: 13%">
+        </div>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="montgomery.html">Montgomery</a></li>
+                <li><a href="birmingham.html">Birmingham</a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+                <li><a href="form.html">Contact Us</a></li>
+            </ul>
+    </nav>
+    </div>
+    <div class="content-container">
+        <main>
+            <div style="text-align: center">
+                <h2>Contact Us</h2>
+                <form id="contact-form" onsubmit="return validateEmails();">
+                    <label for="first-name">First Name:</label><br>
+                    <input type="text" id="first-name" name="first-name"><br><br>
+
+                    <label for="last-name">Last Name:</label><br>
+                    <input type="text" id="last-name" name="last-name"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <label for="confirm-email">Confirm Email:</label><br>
+                    <input type="email" id="confirm-email" name="confirm-email"><br><br>
+
+                    <label for="question">Ask a Question:</label><br>
+                    <textarea id="question" name="question" rows="4" cols="40"></textarea><br><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+        <aside style="text-align: center;">
+            <h2>Visit Alabama</h2>
+            <img src="images/trail.jpg" alt="little river canyon trail" style="width: 90%;"> 
+            <p>Little River Canyon</p><br>
+            <img src="images/beach.jpg" alt="gulf shores" style="width: 90%;">
+            <p>Gulf Shores</p><br>
+            <img src="images/dauphin.jpg" alt="dauphin island" style="width: 90%;">
+            <p>Duaphin Island Beach</p><br>
+            <img src="images/cotton.jpg" alt="cotton field" style="width: 90%;">
+            <p>Cotton Fields</p>
+        </aside>
+    </div>
+    <script>
+        function validateEmails() {
+            const email = document.getElementById("email").value;
+            const confirmEmail = document.getElementById("confirm-email").value;
+
+            if (email !== confirmEmail) {
+                alert("The email addresses do not match.");
+                return false;
+            }
+            return true;
+        }
+    </script>
